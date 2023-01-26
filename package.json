@@ -1,0 +1,16 @@
+{
+  "name": "lambda-school-test-apis",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloominstituteoftechnology/lambda-school-test-apis.git"
+  },
+  "author": "Bloomtech Inc",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
