@@ -6,11 +6,15 @@ app.post('/quotes', (req, res) => {
 })
 
 app.put('/quotes/:id', (req, res) => {
-  res.status(200).json({ successMessage: `You updated the quote with id ${req.params.id} successfully` })
+  res.json({ successMessage: `You updated the quote with id ${req.params.id} successfully` })
 })
 
 app.delete('/quotes/:id', (req, res) => {
-  res.status(200).json({ successMessage: `You deleted the quote with id ${req.params.id} successfully` })
+  res.json({ successMessage: `You deleted the quote with id ${req.params.id} successfully` })
+})
+
+app.use('*', (req, res) => {
+  res.json({ successMessage: 'API is up' })
 })
 
 app.listen(process.env.PORT || 9000, () => {
