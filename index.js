@@ -1,5 +1,8 @@
 const express = require('express')
+const cors = require('cors')
 const app = express()
+
+app.use(cors())
 
 app.post('/quotes', (req, res) => {
   res.status(201).json({ successMessage: 'You created a new quote successfully' })
